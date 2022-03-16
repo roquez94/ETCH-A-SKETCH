@@ -1,0 +1,25 @@
+body {
+  background-color: lightblue;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+div {
+  background-color: white;
+  border-style: solid;
+  border-color: pink;
+  border-width: thick;
+  margin: auto;
+  padding: 50px;
+}
+
+.color {
+  background-color: black;
+  border-color: lightblue;
+}
