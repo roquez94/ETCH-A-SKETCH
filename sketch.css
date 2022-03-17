@@ -4,22 +4,10 @@ body {
   font-family: sans-serif;
 }
 
-#container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-div {
-  background-color: white;
-  border-style: solid;
-  border-color: pink;
-  border-width: thick;
-  margin: auto;
-  padding: 50px;
-}
-
-.color {
-  background-color: black;
-  border-color: lightblue;
+.cells {
+  border: 1px solid gray;
+  min-width: 10px;
+  min-height: 20px;
+  display: inline-block;
+  margin-right: 2px;
 }
