@@ -1,15 +1,36 @@
-window.onload = function() {
-  let size = 5;
-  let grid = document.getElementById("container");
-  
-  //rows
-  for (let i = 1; i <= size; i++){
+const grid = document.getElementById("container");
+let rows = document.getElementsByClassName("gridRow");
+let cells = document.getElementsByClassName("cells");
 
-    //columns
-    for (let j = 1; i <= size; j++){
-        let  gridDiv = document.createElement('div');
-          grid.appendChild(gridDiv);
-          gridDiv.className = 'color';
+
+gridMaker();
+//Creates a default grid sized 16x16 
+function gridMaker() {
+    makeRows(16);
+    makeColumns(16);
+}
+
+//Takes (rows, columns) input and makes a grid
+function makeRows(rowNum) {
+
+    //Creates rows
+    for (r = 0; r < rowNum; r++) {
+        let row = document.createElement("div");
+        grid.appendChild(row).className = "gridRow";
     }
-  }
-};
+}
+
+//Creates columns
+function makeColumns(cellNum) {
+    for (i = 0; i < rows.length; i++) {
+        for (j = 0; j < cellNum; j++) {
+            let newCell = document.createElement("div");
+            rows[j].appendChild(newCell).className = "cells";
+        }
+
+    }
+}
+
+//a “hover” effect so that the grid divs change color when your mouse passes over them, leaving a (pixelated) trail
+
+
