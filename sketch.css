@@ -11,3 +11,7 @@ body {
   display: inline-block;
   margin-right: 2px;
 }
+
+.hover-color {
+  background: black;
+}
