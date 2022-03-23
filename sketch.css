@@ -4,6 +4,15 @@ body {
   font-family: sans-serif;
 }
 
+ .container {
+    position: relative;
+    top: 30px;
+    margin: auto;
+    height: 960px;
+    width: 960px;
+    padding: 0;
+}
+
 .cells {
   border: 1px solid gray;
   min-width: 10px;
